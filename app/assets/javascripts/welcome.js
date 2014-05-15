@@ -13,7 +13,7 @@ Controller.prototype = {
 
 View.prototype = {
   showGrammarCheckedText: function(){
-    $( '.grammar-checked' ).html($( '.text-box textareag' ).val() )
+    $( '.grammar-checked' ).html($( '.text-box textarea' ).val() )
   }
 }
 
