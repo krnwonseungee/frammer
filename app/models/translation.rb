@@ -3,12 +3,15 @@ class Translation < ActiveRecord::Base
   base_uri 'http://glosbe.com/gapi/'
 
   def initialize
-    @options = { from: 'fra', dest: 'eng', format: 'json' }
+    @options = {  query: {from: 'fra', dest: 'eng', format: 'json'} }
   end
 
   def get_translated_word(french_word)
-    @options[:phrase] = french_word
+    @options[:query][:phrase] = french_word
     glosbe_hash = self.class.get("/translate", @options)
+    print "OPTIONS!!! #{@options}"
+    glosbe_hash
+    # print "GLOSBE!!! #{glosbe_hash}"
     # glosbe_hash["tuc"]
   end
 end

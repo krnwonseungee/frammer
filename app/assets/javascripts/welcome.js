@@ -19,10 +19,12 @@ Controller.prototype = {
       type: "POST",
       url: "/generate",
       data: { sentence: $( '.text-box textarea' ).val() },
+      dataType: "text",
       success: function(data){
         console.log('french word sent!')
       },
       error: function(data){
+        console.log(data)
         console.log('french word not sent.')
       }
     }).done(function(data){
@@ -34,15 +36,18 @@ Controller.prototype = {
     $.ajax({
       type: "GET",
       url: "/generate",
+      // data: data,
       dataType: "json",
-      success: function(){
+      success: function(data){
+        console.log(data)
         console.log('english word retrieved!')
       },
       error: function(){
         console.log('english word not retrieved.')
       }
     }).done(function(data){
-      // controller.retrieveTranslatedText(data)
+      $( '.translated' ).html($( data ).val() )
+      // view.renderTranslatedText(data)
     })
   }
 }
