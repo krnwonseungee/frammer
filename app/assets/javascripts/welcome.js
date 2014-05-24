@@ -17,10 +17,32 @@ Controller.prototype = {
   createTranslationRequest: function(){
     $.ajax({
       type: "POST",
-      url: "/translations",
-      data: { sentence: $( '.text-box textarea' ).val() }
+      url: "/generate",
+      data: { sentence: $( '.text-box textarea' ).val() },
+      success: function(data){
+        console.log('french word sent!')
+      },
+      error: function(data){
+        console.log('french word not sent.')
+      }
     }).done(function(data){
-      // view.renderTranslatedText(data)
+      controller.retrieveTranslatedText(data)
+    })
+  },
+
+  retrieveTranslatedText: function(){
+    $.ajax({
+      type: "GET",
+      url: "/generate",
+      dataType: "json",
+      success: function(){
+        console.log('english word retrieved!')
+      },
+      error: function(){
+        console.log('english word not retrieved.')
+      }
+    }).done(function(data){
+      // controller.retrieveTranslatedText(data)
     })
   }
 }
