@@ -24,10 +24,11 @@ Controller.prototype = {
         console.log('french word sent!')
       },
       error: function(data){
-        console.log(data)
-        console.log('french word not sent.')
+        // console.log(Object.keys(data))
+        // console.log('french word not sent.')
       }
     }).done(function(data){
+      // console.log(data)
       controller.retrieveTranslatedText(data)
     })
   },
@@ -46,6 +47,8 @@ Controller.prototype = {
         console.log('english word not retrieved.')
       }
     }).done(function(data){
+      console.log(data)
+      console.log(Object.keys(data))
       $( '.translated' ).html($( data ).val() )
       // view.renderTranslatedText(data)
     })
