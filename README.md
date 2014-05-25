@@ -13,4 +13,6 @@ v.2 - detects idioms/multi-word phrases
 
 v.3 - conjugates verbs correctly
 
-![Pseudocode for v1](http://i.minus.com/ibuxzBbN1dpc0L.jpeg)
+![pic1](http://i.minus.com/ibuxzBbN1dpc0L.jpeg)
+![pic2](http://i.minus.com/ioB1jIrAqDMDa.jpeg)
+![pic3](http://i.minus.com/iX8e2ftXi43td.jpeg)
