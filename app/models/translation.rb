@@ -8,11 +8,7 @@ class Translation < ActiveRecord::Base
 
   def get_translated_word(french_word)
     @options[:query][:phrase] = french_word
-    glosbe_hash = self.class.get("/translate", @options)
-    print "OPTIONS!!! #{@options}"
-    glosbe_hash
-    # print "GLOSBE!!! #{glosbe_hash}"
-    # glosbe_hash["tuc"]
+    self.class.get("/translate", @options)
   end
 end
 
