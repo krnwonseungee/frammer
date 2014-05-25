@@ -24,8 +24,7 @@ Controller.prototype = {
         console.log('french word sent!')
       },
       error: function(data){
-        // console.log(Object.keys(data))
-        // console.log('french word not sent.')
+        console.log('french word not sent.')
       }
     }).done(function(data){
       var translation = data.tuc[0].phrase.text
