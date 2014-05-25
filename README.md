@@ -20,7 +20,7 @@ v.3 - conjugates verbs correctly
 ###notes:
 subjunctive
 
-recognize verbs (followed by subject)
+recognize verbs (followed by subject) -- CONJUGATED vs. NON-CONJUGATED
 
 keep punctuation as is
 
