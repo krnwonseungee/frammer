@@ -12,3 +12,5 @@ v.1 - translates word for word (treats each word as unit of translation)
 v.2 - detects idioms/multi-word phrases
 
 v.3 - conjugates verbs correctly
+
+![Pseudocode for v1](http://i.minus.com/ibuxzBbN1dpc0L.jpeg)
