@@ -16,3 +16,9 @@ v.3 - conjugates verbs correctly
 ![pic1](http://i.minus.com/ibuxzBbN1dpc0L.jpeg)
 ![pic2](http://i.minus.com/ioB1jIrAqDMDa.jpeg)
 ![pic3](http://i.minus.com/iX8e2ftXi43td.jpeg)
+
+notes:
+subjunctive
+recognize verbs (followed by subject)
+keep punctuation as is
+
