@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+IO.foreach("public/dictionary.txt").each do |line|
+  delimiter = ["(f)", "(m)", "(m'f)", "  "].select{|el| line.include?(el) == true }.first
+  split_definitions_arry = line.split(delimiter)
+  french_term = split_definitions_arry.shift
+  Translator.create(french_word: french_term, english_word: split_definitions_arry.join(" "))
+end
+
