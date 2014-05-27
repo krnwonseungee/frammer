@@ -439,6 +439,7 @@ astéroïde (m) asteroid
 athéisme (m)  atheism
 atome (m) atom
 attendre  wait
+au  at the
 au revoir; adieu  goodbye
 au secours !, à l’aide !  help
 aubergine (f) aubergine
@@ -871,6 +872,7 @@ drapeau (m), étendard (m) (ancient war flag)  Wiktionary:Usability/flag
 droit (m); droite (f) right
 droits de l'homme (m) human rights
 dromadaire (m)  dromedary
+du  of the
 dubnium (m) dubnium
 dyslexie (f)  dyslexia
 dysprosium (m)  dysprosium
@@ -1197,7 +1199,7 @@ koala (m) koala
 krypton (m) krypton
 kurde (m) Kurdish
 l'année dernière  last year
-la Terre, terre (f) Earth
+la  the
 lac (m) lake
 laine (f) wool
 lait (m)  milk
@@ -1216,12 +1218,9 @@ latin (m) Latin
 lave (f)  lava
 laver wash
 lawrencium (m)  lawrencium
-le (m); la (f); il (m); elle (f)  it
-le (m); la (f); les the
+le  the
 lent (m); lente (f) slow
-les Chinois (m'p) Chinese
-les Français (p)  French
-les îles Féroé (f'p), les îles Faeroe (f'p) Faroe Islands
+les  the
 lesbienne (f); gouine (f) lesbian
 lettre (f)  letter
 lettre (f); caractère (m) letter
@@ -1780,6 +1779,7 @@ révolution (f)  revolution
 rêve (m); songe (m) dream
 rêver dream
 s'il vous plaît; s'il te plaît; S.V.P.; prière de please
+sa  her
 sable (m) sand
 sabot hoof
 sac (m); sachet (m); poche (f)  bag
@@ -1862,7 +1862,7 @@ soldat (m)  soldier
 soleil (m)  sun
 sommeil (m) sleep
 son (m) sound
-son (m); sa (f); ses  her
+son (m); sa (f); ses  his
 sorcière (f)  witch
 soudainement; tout d'un coup  suddenly
 soufre (m)  sulfur
@@ -1933,7 +1933,6 @@ tigre (m) tiger
 timbre (m)  postage stamp
 tissu conjonctif  connective tissue
 titane (m)  titanium
-toilettes (f); wc (m); cabinet (m)  toilet
 toit (m)  roof
 tomate (f)  tomato
 tomber  fall
@@ -1946,6 +1945,7 @@ tour (f)  tower
 tourisme (m)  tourism
 tournesol (m) sunflower
 tourterelle (f) turtle dove
+tous  all
 tous droits réservés  all rights reserved
 tousser cough
 tout (m)  everything
@@ -2089,9 +2089,9 @@ zéro (m)  zero
 Éthiopie  Ethiopia
 Île de Pâques (f) Easter Island
 Îles Marshall (f'p) Marshall Islands
-à vos souhaits; à tes souhaits  bless you
 à; au (m) to
 à; en at
+à vos souhaits; à tes souhaits  bless you
 âge (m) age
 âme (f) soul
 âne (m) donkey
