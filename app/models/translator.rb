@@ -1,8 +1,9 @@
-class Translator < ActiveRecord::Base
+class Translator
   include HTTParty
   base_uri 'http://glosbe.com/gapi/'
 
   def get_english_sentence(french_sentence)
+    puts "TEST!!"
     @eng_sent_arr = Array.new
     french_sentence.split(" ").each do |fr_word|
       @eng_sent_arr << get_translated_word(fr_word)
@@ -11,7 +12,7 @@ class Translator < ActiveRecord::Base
   end
 
   def get_translated_word(french_word)
-    if Translator.where("french_word like ?", french_word + "%" ).length != 0
+    if TranslatedDefinition.where("french_word like ?", french_word + "%" ).length != 0
       puts "THRU DB #{french_word}"
       find_translated_word_via_db(french_word)
     else
@@ -23,7 +24,7 @@ class Translator < ActiveRecord::Base
   private
 
   def find_translated_word_via_db(untranslated_word)
-    Translator.where("french_word like ?", untranslated_word + "%" ).first.english_word + " "
+    TranslatedDefinition.where("french_word like ?", untranslated_word + "%" ).first.english_word + " "
   end
 
   def find_translated_word_via_api(untranslated_word)
