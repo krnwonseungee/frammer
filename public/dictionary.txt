@@ -241,7 +241,6 @@ Pays de Galles (m)  Wales
 Philippines (f) Philippines
 Pluton (m)  Pluto
 Pléiades  Pleiades
-Poissons (m)  Pisces
 Pologne (f) Poland
 Portugal (m)  Portugal
 Prague (f)  Prague
@@ -1974,7 +1973,7 @@ trouble bipolaire bipolar disorder
 très  very
 tsar (m); tzar (m)  tsar
 tsunami (m) tsunami
-tu (m)  thou
+tu (m)  you
 tuer  kill
 tungstène (m); wolfram (m)  tungsten
 turc (m)  Turkish
