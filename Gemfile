@@ -32,7 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Enable requests to API server
 gem 'httparty', '~> 0.13.1'
+
+# Stanford Natural Language Processing Tool
+gem 'stanford-core-nlp', :git => 'https://github.com/louismullie/stanford-core-nlp.git'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

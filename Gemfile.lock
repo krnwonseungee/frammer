@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/louismullie/stanford-core-nlp.git
+  revision: 045f6707de9e20ebaaa8fd1abf3060391c30ca9d
+  specs:
+    stanford-core-nlp (0.5.1)
+      bind-it (~> 0.2.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,6 +33,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    bind-it (0.2.7)
+      rjb (~> 1.4.3)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -76,6 +85,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    rjb (1.4.9)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -119,5 +129,6 @@ DEPENDENCIES
   rails (= 4.0.4)
   sass-rails (~> 4.0.2)
   sdoc
+  stanford-core-nlp!
   turbolinks
   uglifier (>= 1.3.0)

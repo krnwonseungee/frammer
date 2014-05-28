@@ -7,10 +7,11 @@ View = function(){};
 
 Controller.prototype = {
   bindEvents: function(){
-    // $( '.text-box textarea' ).keyup( view.showGrammarCheckedText )
     $( '.text-box textarea' ).keyup( function(e){
-      e.preventDefault();
-      controller.createTranslationRequest()
+      if ( e.which == 32 ) {
+        e.preventDefault();
+        controller.createTranslationRequest()
+      }
     })
   },
 
@@ -27,38 +28,13 @@ Controller.prototype = {
         console.log('french word not sent.')
       }
     }).done(function(data){
-      var translation = data.tuc[0].phrase.text
-      view.renderTranslatedText(translation)
+      // var translation = data.tuc[0].phrase.text
+      view.renderTranslatedText(data)
     })
   },
-
-  // retrieveTranslatedText: function(){
-  //   $.ajax({
-  //     type: "GET",
-  //     url: "/generate",
-  //     // data: data,
-  //     dataType: "json",
-  //     success: function(data){
-  //       console.log(data)
-  //       console.log('english word retrieved!')
-  //     },
-  //     error: function(){
-  //       console.log('english word not retrieved.')
-  //     }
-  //   }).done(function(data){
-  //     // console.log(Object.keys(data))
-  //     // if (data)
-  //     $( '.translated' ).html($( data ).val() )
-  //     // view.renderTranslatedText(data)
-  //   })
-  // }
 }
 
 View.prototype = {
-  // showGrammarCheckedText: function(){
-  //   $( '.grammar-checked' ).html($( '.text-box textarea' ).val() )
-  // },
-
   renderTranslatedText: function(data){
     $( '.translated' ).html( data )
   }
