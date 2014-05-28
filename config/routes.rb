@@ -1,4 +1,4 @@
 Frammer::Application.routes.draw do
-  match "/generate" => "translators#generate", via: [:get, :post]
+  get "/generate", :to => "translators#generate"
   root 'welcome#index'
 end
