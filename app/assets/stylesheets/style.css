@@ -2,3 +2,33 @@
   height: 100px;
   width: 150px;
 }
+
+.footer {
+  position: relative;
+  clear: both;
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 23px;
+  font-size: 15px;
+}
+
+.footer ul {
+  float: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+.footer li {
+  font-color: #E270AA;
+  display: inline-block;
+}
+
+.footer a {
+  color: #6E00B8;
+}
+
+.footer a:hover {
+  color: #CC3399;
+}
